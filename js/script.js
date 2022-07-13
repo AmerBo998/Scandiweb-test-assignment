@@ -52,31 +52,31 @@ $(document).ready(function()
     size:
     {
         required: true,
-        pattern:/[a-zA-Z0-9]+/
+        pattern:/[0-9]+/
     },
 
     width:
     {
         required: true,
-        pattern:/[a-zA-Z0-9]+/
+        pattern:/[0-9]+/
     },
 
     height:
     {
         required: true,
-        pattern:/[a-zA-Z0-9]+/
+        pattern:/[0-9]+/
     },
 
     length:
     {
         required: true,
-        pattern:/[a-zA-Z0-9]+/
+        pattern:/[0-9]+/
     },
 
     weight:
     {
         required: true,
-        pattern:/[a-zA-Z0-9]+/
+        pattern:/[0-9]+/
     }
     
     },
