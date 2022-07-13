@@ -40,7 +40,7 @@ $(document).ready(function()
     price: 
     {
         required: true,
-        pattern:/[0-9]+/
+        number: true
     },
 
     productType:
@@ -52,31 +52,31 @@ $(document).ready(function()
     size:
     {
         required: true,
-        pattern:/[0-9]+/
+       number: true
     },
 
     width:
     {
         required: true,
-        pattern:/[0-9]+/
+        number: true
     },
 
     height:
     {
         required: true,
-        pattern:/[0-9]+/
+        number: true
     },
 
     length:
     {
         required: true,
-        pattern:/[0-9]+/
+        number: true
     },
 
     weight:
     {
         required: true,
-        pattern:/[0-9]+/
+         number: true
     }
     
     },
@@ -100,7 +100,7 @@ $(document).ready(function()
         price: 
         {
             required: "Please, submit required data",
-            pattern: "Please, provide the data of indicated type"
+            number: "Please, provide the data of indicated type"
         },
 
         productType:
@@ -111,29 +111,29 @@ $(document).ready(function()
         size: 
         {
             required: "Please, submit required data",
-            pattern: "Please, provide the data of indicated type"
+            number: "Please, provide the data of indicated type"
         },
 
         width: 
         {
             required: "Please, submit required data",
-            pattern: "Please, provide the data of indicated type"
+            number: "Please, provide the data of indicated type"
         },
 
         height: 
         {
             required: "Please, submit required data",
-            pattern: "Please, provide the data of indicated type"
+            number: "Please, provide the data of indicated type"
         },
         length: 
         {
             required: "Please, submit required data",
-            pattern: "Please, provide the data of indicated type"
+            number: "Please, provide the data of indicated type"
         },
         weight: 
         {
             required: "Please, submit required data",
-            pattern: "Please, provide the data of indicated type"
+            number: "Please, provide the data of indicated type"
         },
     },
   });
