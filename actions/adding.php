@@ -29,15 +29,9 @@ $neededClass=ucfirst($type);
 
 $newClass=new $neededClass;
 
-$attribute=$newClass->getAttribute();
-
-$sku=$product->getSKU();
-$name=$product->getName();
-$price=$product->getPrice();
-
 //Adding data to database
 
-$product->AddData($sku, $name, $price, $attribute);
+$product->AddData($product->getSKU(),$product->getName(), $product->getPrice(), $newClass->getAttribute());
 
 
 
