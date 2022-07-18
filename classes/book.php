@@ -6,8 +6,12 @@ include_once("../interfaces/type.php");
 
 class Book implements Type
 {
+    public $weight;
+
     public function getAttribute()
     {
-        return "Weight: ".$_POST['weight']."KG";
+        $this->weight = $_POST['weight'];
+
+        return  "Weight: ".$this->weight."KG";
     }
 }
