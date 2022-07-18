@@ -7,9 +7,17 @@ include_once("../interfaces/type.php");
 
 class Furniture implements Type
 {
+    public $height;
+    public $width;
+    public $length;
+
     public function getAttribute()
     {
-        return "Dimensions: ".$_POST['height']."x".$_POST['width']."x".$_POST['length'];
+          $this->height=$_POST['height'];
+          $this->width=$_POST['width'];
+          $this->length=$_POST['length'];
+
+        return "Dimensions: ".$this->height."x".$this->width."x".$this->length;
     }
 }
 
