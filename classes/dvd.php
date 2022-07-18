@@ -6,9 +6,13 @@ include_once("../interfaces/type.php");
 
 class DVD implements Type
 {
+   public $size;
+
     public function getAttribute()
     {
-        return "Size: ".$_POST['size']." MB";
+        $this->size = $_POST['size'];
+
+        return  "Size: ".$this->size." MB";
     }
 }
 
